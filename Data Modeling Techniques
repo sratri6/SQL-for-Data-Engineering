@@ -1,0 +1,20 @@
+🔹 What is Data Modeling?
+Data modeling is the process of designing how data is structured, stored, and related to support business processes, analytics, and performance.
+Goal: accuracy, scalability, performance, and usability.
+
+🔹 Best Data Modeling Techniques
+Dimensional Modeling (Star Schema)
+Structure
+Fact table → measures (sales, transactions)
+Dimension tables → descriptive attributes
+
+Snowflake Schema (Normalized Dimensions)
+A variation of star schema where dimension tables are normalized into sub-dimensions.
+✔ Example
+Customer → City → State → Country
+✔ Pros
+✔ reduces redundancy
+✔ improves data integrity
+❌ Cons
+❌ more joins → slower queries
+Use when dimension hierarchies are complex.
